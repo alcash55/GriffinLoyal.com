@@ -1,5 +1,5 @@
 import './App.css';
-import AppBarHeader from './assets/AppBarHeader.tsx';
+import AppBarHeader from './Assets/AppBarHeader.tsx';
 
 function App() {
   return (
