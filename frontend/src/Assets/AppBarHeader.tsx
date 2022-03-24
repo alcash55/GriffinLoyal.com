@@ -4,13 +4,9 @@ import Loyal from './images/Loyal.svg';
 const AppBarHeader = () => {
   return (
     <AppBar position="static">
-      <Container maxWidth="xl" sx={{ alignItems: 'center' }}>
-        <Toolbar disableGutters>
-          <Box
-            alignItems="center"
-            justifyContent="center"
-            sx={{ display: 'flex', flexDirection: 'row' }}
-          >
+      <Container maxWidth="xl">
+        <Toolbar disableGutters sx={{ alignItems: 'center', justifyContent: 'center' }}>
+          <Box display="flex" flexDirection="row" sx={{ p: 3 }}>
             <IconButton>Merch</IconButton>
             <IconButton>Twitter</IconButton>
             <img src={Loyal} alt="GB Logo" />
