@@ -1,9 +1,15 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Paper, Typography, Divider } from '@mui/material';
 const AppContent = () => {
   return (
-    <Box>
-      <Typography>This is where content goes</Typography>
-    </Box>
+    <Paper elevation={3}>
+      <Box>
+        <Typography>This is where content goes</Typography>
+        <Divider />
+        <Typography>This is where content goes</Typography>
+        <Divider />
+        <Typography>This is where content goes</Typography>
+      </Box>
+    </Paper>
   );
 };
 
