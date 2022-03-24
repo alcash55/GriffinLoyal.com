@@ -7,11 +7,13 @@ const AppBarHeader = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ alignItems: 'center', justifyContent: 'center' }}>
           <Box display="flex" flexDirection="row" sx={{ p: 3 }}>
-            <IconButton>Merch</IconButton>
-            <IconButton>Twitter</IconButton>
-            <img src={Loyal} alt="GB Logo" />
-            <IconButton>Test</IconButton>
-            <IconButton>Test</IconButton>
+            <IconButton sx={{ ml: 3, mr: 3 }}>Merch</IconButton>
+            <IconButton sx={{ ml: 3, mr: 3 }}>Sponsors</IconButton>
+            <Box sx={{ ml: 5, mr: 5 }}>
+              <img src={Loyal} alt="GB Logo" />
+            </Box>
+            <IconButton sx={{ ml: 3, mr: 3 }}>Watch</IconButton>
+            <IconButton sx={{ ml: 3, mr: 3 }}>Schedule</IconButton>
           </Box>
         </Toolbar>
       </Container>
