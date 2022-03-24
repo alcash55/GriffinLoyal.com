@@ -3,7 +3,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 // import { TwitterIcon, InstagramIcon, YouTubeIcon } from '@mui/material';
-import Loyal from './images/Loyal.svg';
+import Loyal from '../../images/Loyal.svg';
 
 const AppBarHeader = () => {
   return (
