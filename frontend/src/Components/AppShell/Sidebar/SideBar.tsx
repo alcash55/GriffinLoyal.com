@@ -43,7 +43,7 @@ const SideBar = () => {
           <Menu>
             <MenuItem>
               <IconButton onClick={menuIconClick}>
-                <MenuIcon />
+                <MenuIcon sx={{ color: "white" }} />
               </IconButton>
             </MenuItem>
           </Menu>
