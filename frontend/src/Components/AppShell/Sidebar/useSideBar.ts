@@ -1,19 +1,12 @@
-import { PrintOutlined } from '@mui/icons-material';
-import {useState} from 'react';
+// import { PrintOutlined } from '@mui/icons-material';
+import { useState } from 'react';
 
 const useSideBar = () => {
-    const [menuButton,setMenuButton] = useState(false);
-    if (menuButton) {
-        setMenuButton(!menuButton);
-        console.log('yeet')
-      } else {
-        setMenuButton(!menuButton);
-        console.log('yeet')
-      }
-    return (
-        menuButton
-    )
+  const [collapseButton, setCollapseButton] = useState(false);
+  collapseButton ? setCollapseButton(false) : setCollapseButton(true);
+
+  return (
+    collapseButton
+  )
 }
-
-
 export default useSideBar

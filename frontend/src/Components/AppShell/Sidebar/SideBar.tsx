@@ -18,16 +18,11 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import MenuIcon from "@mui/icons-material/Menu";
 import sidebarBg from "../../../Assets/images/bg2.png";
-import { useState } from "react";
 import useSideBar from "./useSideBar";
 
-interface Props {
-  collapsed: any;
-}
-
-const SideBar = ({ collapsed }: Props) => {
+const SideBar = () => {
   return (
-    <ProSidebar image={sidebarBg} collapsed={false}>
+    <ProSidebar image={sidebarBg} collapsed={useSideBar()}>
       <SidebarHeader>
         <Box
           style={{
@@ -41,10 +36,7 @@ const SideBar = ({ collapsed }: Props) => {
           }}
         >
           <Menu>
-            <MenuItem
-              icon={<MenuIcon />}
-              onClick={(collapsed = !collapsed)}
-            ></MenuItem>
+            <MenuItem icon={<MenuIcon />}></MenuItem>
           </Menu>
           <img src={loyal} alt="gbLogo" />
         </Box>
