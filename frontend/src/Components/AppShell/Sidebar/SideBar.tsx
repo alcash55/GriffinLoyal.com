@@ -22,7 +22,7 @@ import useSideBar from "./useSideBar";
 
 const SideBar = () => {
   return (
-    <ProSidebar image={sidebarBg} collapsed={useSideBar()}>
+    <ProSidebar image={sidebarBg} collapsed={false}>
       <SidebarHeader>
         <Box
           style={{
@@ -36,7 +36,11 @@ const SideBar = () => {
           }}
         >
           <Menu>
-            <MenuItem icon={<MenuIcon />}></MenuItem>
+            <MenuItem>
+              <IconButton onClick={useSideBar}>
+                <MenuIcon />
+              </IconButton>
+            </MenuItem>
           </Menu>
           <img src={loyal} alt="gbLogo" />
         </Box>
