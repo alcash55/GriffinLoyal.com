@@ -1,6 +1,7 @@
 import AppContent from "../AppShell/AppContent/AppContent";
-import Footer from "../AppShell/AppFooter/Footer";
+// import Footer from "../AppShell/AppFooter/Footer";
 import SideBar from "../AppShell/Sidebar/SideBar";
+import "./App.scss";
 
 function App() {
   return (
