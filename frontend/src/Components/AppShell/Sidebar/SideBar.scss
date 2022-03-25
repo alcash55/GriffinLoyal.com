@@ -1,13 +1,36 @@
 @import "~react-pro-sidebar/dist/scss/styles.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 .sidebar {
   height: 100vh;
   width: 8em;
+  font-family: "Montserrat", sans-serif;
 }
 
 .menu-item {
   &:hover {
     background-color: gray;
     text-decoration: none;
+  }
+}
+.button {
+  &:link {
+    color: blue;
+    text-align: center;
+  }
+
+  a:visited {
+    color: #6e6e6e;
+    text-align: center;
+  }
+
+  a:hover {
+    color: blue;
+    text-align: center;
+  }
+
+  a:active {
+    color: #d9501e;
+    text-align: center;
   }
 }

@@ -81,19 +81,19 @@ const SideBar = () => {
             }}
           >
             <Box>
-              <IconButton>
+              <IconButton className="menu-item">
                 <SvgIcon>
                   <TwitterIcon sx={{ color: "white" }} />
                 </SvgIcon>
               </IconButton>
 
-              <IconButton>
+              <IconButton className="menu-item">
                 <SvgIcon>
                   <InstagramIcon sx={{ color: "white" }} />
                 </SvgIcon>
               </IconButton>
 
-              <IconButton>
+              <IconButton className="menu-item">
                 <SvgIcon>
                   <YouTubeIcon sx={{ color: "white" }} />
                 </SvgIcon>
