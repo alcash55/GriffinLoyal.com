@@ -6,8 +6,7 @@ function App() {
   return (
     <div className="App">
       <SideBar />
-      {/* <AppContent />
-      <Footer /> */}
+      <AppContent />
     </div>
   );
 }
