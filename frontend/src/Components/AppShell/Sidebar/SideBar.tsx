@@ -42,8 +42,16 @@ const SideBar = () => {
         >
           <Menu>
             <MenuItem>
-              <IconButton onClick={menuIconClick}>
-                <MenuIcon sx={{ color: "white" }} />
+              <IconButton
+                onClick={menuIconClick}
+                sx={{
+                  color: "white",
+                  ":hover": {
+                    bgcolor: "gray",
+                  },
+                }}
+              >
+                <MenuIcon />
               </IconButton>
             </MenuItem>
           </Menu>
