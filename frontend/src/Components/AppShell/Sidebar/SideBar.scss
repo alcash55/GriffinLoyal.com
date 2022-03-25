@@ -4,3 +4,10 @@
   height: 100vh;
   width: 8em;
 }
+
+.menu-item {
+  &:hover {
+    background-color: gray;
+    text-decoration: none;
+  }
+}

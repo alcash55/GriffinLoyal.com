@@ -43,7 +43,7 @@ const SideBar = () => {
           <Menu>
             <MenuItem>
               <IconButton onClick={menuIconClick}>
-                <MenuIcon />
+                <MenuIcon sx={{ color: "white" }} />
               </IconButton>
             </MenuItem>
           </Menu>
@@ -52,10 +52,18 @@ const SideBar = () => {
       </SidebarHeader>
       <SidebarContent>
         <Menu iconShape="circle">
-          <MenuItem icon={<MerchIcon />}>Merch</MenuItem>
-          <MenuItem icon={<WatchIcon />}>Watch</MenuItem>
-          <MenuItem icon={<ScheduleIcon />}>Schedule</MenuItem>
-          <MenuItem icon={<SponsorsIcon />}>Sponsors</MenuItem>
+          <MenuItem className="menu-item" icon={<MerchIcon />}>
+            Merch
+          </MenuItem>
+          <MenuItem className="menu-item" icon={<WatchIcon />}>
+            Watch
+          </MenuItem>
+          <MenuItem className="menu-item" icon={<ScheduleIcon />}>
+            Schedule
+          </MenuItem>
+          <MenuItem className="menu-item" icon={<SponsorsIcon />}>
+            Sponsors
+          </MenuItem>
         </Menu>
       </SidebarContent>
       <SidebarFooter style={{ textAlign: "center" }}>
