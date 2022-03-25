@@ -25,8 +25,9 @@ const SideBar = () => {
   const menuIconClick = () => {
     menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
   };
+
   return (
-    <ProSidebar image={sidebarBg} collapsed={menuCollapse}>
+    <ProSidebar image={sidebarBg} collapsed={menuCollapse} className="sidebar">
       <SidebarHeader>
         <Box
           style={{
