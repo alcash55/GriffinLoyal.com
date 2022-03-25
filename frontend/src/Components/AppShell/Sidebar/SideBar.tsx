@@ -47,7 +47,7 @@ const SideBar = () => {
                 sx={{
                   color: "white",
                   ":hover": {
-                    bgcolor: "gray",
+                    bgcolor: "rgb(83, 83, 83)",
                   },
                 }}
               >
@@ -93,7 +93,7 @@ const SideBar = () => {
                 sx={{
                   color: "white",
                   ":hover": {
-                    bgcolor: "gray",
+                    bgcolor: "rgb(83, 83, 83)",
                   },
                 }}
               >
@@ -106,7 +106,7 @@ const SideBar = () => {
                 sx={{
                   color: "white",
                   ":hover": {
-                    bgcolor: "gray",
+                    bgcolor: "rgb(83, 83, 83)",
                   },
                 }}
               >
@@ -119,7 +119,7 @@ const SideBar = () => {
                 sx={{
                   color: "white",
                   ":hover": {
-                    bgcolor: "gray",
+                    bgcolor: "rgb(83, 83, 83)",
                   },
                 }}
               >
