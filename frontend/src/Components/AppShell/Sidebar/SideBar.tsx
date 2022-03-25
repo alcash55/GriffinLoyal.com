@@ -8,7 +8,7 @@ import {
 } from "react-pro-sidebar";
 import { Box, IconButton, SvgIcon } from "@mui/material";
 import "./SideBar.scss";
-import loyal from "../../../Assets/Images/Loyal.svg";
+import loyal from "../../../Assets/images/Loyal.svg";
 import MerchIcon from "@mui/icons-material/Checkroom";
 import WatchIcon from "@mui/icons-material/LiveTv";
 import ScheduleIcon from "@mui/icons-material/CalendarMonth";
@@ -17,32 +17,17 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import MenuIcon from "@mui/icons-material/Menu";
-import sidebarBg from "../../../Assets/Images/bg2.png";
+import sidebarBg from "../../../Assets/images/bg2.png";
+import { useState } from "react";
+import useSideBar from "./useSideBar";
 
 interface Props {
-  image: any;
   collapsed: any;
-  rtl: any;
-  toggled: any;
-  handleToggleSidebar: any;
 }
 
-const SideBar = ({
-  image,
-  collapsed,
-  rtl,
-  toggled,
-  handleToggleSidebar,
-}: Props) => {
+const SideBar = ({ collapsed }: Props) => {
   return (
-    <ProSidebar
-      image={image ? sidebarBg : false}
-      rtl={rtl}
-      collapsed={collapsed}
-      toggled={toggled}
-      breakPoint="md"
-      onToggle={handleToggleSidebar}
-    >
+    <ProSidebar image={sidebarBg} collapsed={false}>
       <SidebarHeader>
         <Box
           style={{
@@ -56,7 +41,10 @@ const SideBar = ({
           }}
         >
           <Menu>
-            <MenuItem icon={<MenuIcon />}></MenuItem>
+            <MenuItem
+              icon={<MenuIcon />}
+              onClick={(collapsed = !collapsed)}
+            ></MenuItem>
           </Menu>
           <img src={loyal} alt="gbLogo" />
         </Box>
