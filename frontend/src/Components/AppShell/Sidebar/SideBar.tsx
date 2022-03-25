@@ -18,11 +18,15 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import MenuIcon from "@mui/icons-material/Menu";
 import sidebarBg from "../../../Assets/images/bg2.png";
-import useSideBar from "./useSideBar";
+import { useState } from "react";
 
 const SideBar = () => {
+  const [menuCollapse, setMenuCollapse] = useState(false);
+  const menuIconClick = () => {
+    menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
+  };
   return (
-    <ProSidebar image={sidebarBg} collapsed={false}>
+    <ProSidebar image={sidebarBg} collapsed={menuCollapse}>
       <SidebarHeader>
         <Box
           style={{
@@ -37,7 +41,7 @@ const SideBar = () => {
         >
           <Menu>
             <MenuItem>
-              <IconButton onClick={useSideBar}>
+              <IconButton onClick={menuIconClick}>
                 <MenuIcon />
               </IconButton>
             </MenuItem>
