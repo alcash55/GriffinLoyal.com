@@ -13,24 +13,3 @@
     text-decoration: none;
   }
 }
-.button {
-  &:link {
-    color: blue;
-    text-align: center;
-  }
-
-  a:visited {
-    color: #6e6e6e;
-    text-align: center;
-  }
-
-  a:hover {
-    color: blue;
-    text-align: center;
-  }
-
-  a:active {
-    color: #d9501e;
-    text-align: center;
-  }
-}
