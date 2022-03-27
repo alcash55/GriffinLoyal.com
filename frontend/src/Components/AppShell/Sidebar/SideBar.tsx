@@ -90,6 +90,7 @@ const SideBar = () => {
           >
             <Box>
               <IconButton
+                href="https://twitter.com/griffinloyal"
                 sx={{
                   color: "white",
                   ":hover": {
@@ -103,6 +104,7 @@ const SideBar = () => {
               </IconButton>
 
               <IconButton
+                href="https://www.instagram.com/griffinloyal/"
                 sx={{
                   color: "white",
                   ":hover": {
@@ -116,6 +118,7 @@ const SideBar = () => {
               </IconButton>
 
               <IconButton
+                href="https://www.youtube.com/channel/UCKnU9i5L3GA0mirtqYpqDGA"
                 sx={{
                   color: "white",
                   ":hover": {
