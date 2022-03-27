@@ -61,7 +61,7 @@ const SideBar = () => {
       <SidebarContent>
         <Menu iconShape="circle">
           <MenuItem className="menu-item" icon={<MerchIcon />}>
-            Merch
+            <a href="#merch">Merch</a>
           </MenuItem>
           <MenuItem className="menu-item" icon={<WatchIcon />}>
             Watch

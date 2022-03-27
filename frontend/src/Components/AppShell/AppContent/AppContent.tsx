@@ -1,20 +1,20 @@
-import { Box, Paper, Typography, Divider } from "@mui/material";
+import { Box, Paper, Typography } from "@mui/material";
 import "./AppContent.scss";
 // import Merch from './sections/Merch.tsx';
 const AppContent = () => {
   return (
     <Paper elevation={3}>
       <Box className="body">
-        <Box className="merch">
+        <Box id="merch" className="merch">
           <Typography> this is where content goes</Typography>
         </Box>
-        <Box className="watch">
+        <Box id="watch" className="watch">
           <Typography> this is where content goes</Typography>
         </Box>
-        <Box className="schedule">
+        <Box id="scheudle" className="schedule">
           <Typography> this is where content goes</Typography>
         </Box>
-        <Box className="sponsors">
+        <Box id="sponsers" className="sponsors">
           <Typography> this is where content goes</Typography>
         </Box>
       </Box>
