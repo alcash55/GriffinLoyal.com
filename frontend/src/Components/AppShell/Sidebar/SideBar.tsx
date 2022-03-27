@@ -17,7 +17,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import MenuIcon from "@mui/icons-material/Menu";
-import sidebarBg from "../../../Assets/images/bg2.png";
+import sidebarBg from "../../../Assets/images/SidebarBG.svg";
 import { useState } from "react";
 
 const SideBar = () => {
