@@ -3,7 +3,7 @@ import "./Schedule.scss";
 
 const Schedule = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }} className="schedule">
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Typography>This is where content goes</Typography>

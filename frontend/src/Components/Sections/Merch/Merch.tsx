@@ -3,19 +3,19 @@ import "./Merch.scss";
 
 const Merch = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }} className="merch">
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <Typography>This is where content goes</Typography>
+          <Typography>Merch</Typography>
         </Grid>
         <Grid item xs={12}>
-          <Typography>This is where content goes</Typography>
+          <Typography>Merch</Typography>
         </Grid>
         <Grid item xs={12}>
-          <Typography>This is where content goes</Typography>
+          <Typography>Merch</Typography>
         </Grid>
         <Grid item xs={12}>
-          <Typography>This is where content goes</Typography>
+          <Typography>TMerch</Typography>
         </Grid>
       </Grid>
     </Box>
