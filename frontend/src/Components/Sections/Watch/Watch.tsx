@@ -1,10 +1,13 @@
 import { Grid, Box, Typography } from "@mui/material";
+import "./Watch.scss";
 
-const Merch = () => {
+const Watch = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
-        <Grid item xs={12}></Grid>
+        <Grid item xs={12}>
+          <Typography>This is where content goes</Typography>
+        </Grid>
         <Grid item xs={12}>
           <Typography>This is where content goes</Typography>
         </Grid>
@@ -19,4 +22,4 @@ const Merch = () => {
   );
 };
 
-export default Merch;
+export default Watch;

@@ -18,6 +18,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import MenuIcon from "@mui/icons-material/Menu";
 import sidebarBg from "../../../Assets/images/SidebarBG.svg";
+import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
 import { useState } from "react";
 
 const SideBar = () => {
@@ -68,6 +69,9 @@ const SideBar = () => {
           </MenuItem>
           <MenuItem className="menu-item" icon={<ScheduleIcon />}>
             Schedule
+          </MenuItem>
+          <MenuItem className="menu-item" icon={<EmojiPeopleIcon />}>
+            About Me
           </MenuItem>
           <MenuItem className="menu-item" icon={<SponsorsIcon />}>
             Sponsors

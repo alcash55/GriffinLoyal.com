@@ -1,7 +1,10 @@
 import { Box, Paper, Typography } from "@mui/material";
 import "./AppContent.scss";
-import "../../Sections/Merch";
-import Merch from "../../Sections/Merch";
+import Merch from "../../Sections/Merch/Merch";
+import Watch from "../../Sections/Watch/Watch";
+import Schedule from "../../Sections/Schedule/Schedule";
+import Sponsors from "../../Sections/Sponsors/Sponsors";
+import AboutMe from "../../Sections/AboutMe/AboutMe";
 
 const AppContent = () => {
   return (
@@ -11,13 +14,16 @@ const AppContent = () => {
           <Merch />
         </Box>
         <Box id="watch" className="watch">
-          <Typography> this is where content goes</Typography>
+          <Watch />
         </Box>
         <Box id="scheudle" className="schedule">
-          <Typography> this is where content goes</Typography>
+          <Schedule />
         </Box>
         <Box id="sponsers" className="sponsors">
-          <Typography> this is where content goes</Typography>
+          <Sponsors />
+        </Box>
+        <Box>
+          <AboutMe />
         </Box>
       </Box>
     </Paper>
