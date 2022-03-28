@@ -22,7 +22,7 @@ const AppContent = () => {
         <Box id="sponsers" className="sponsors">
           <Sponsors />
         </Box>
-        <Box>
+        <Box id="aboutme" className="aboutme">
           <AboutMe />
         </Box>
       </Box>

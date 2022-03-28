@@ -12,13 +12,13 @@ import loyal from "../../../Assets/images/Loyal.svg";
 import MerchIcon from "@mui/icons-material/Checkroom";
 import WatchIcon from "@mui/icons-material/LiveTv";
 import ScheduleIcon from "@mui/icons-material/CalendarMonth";
-import SponsorsIcon from "@mui/icons-material/PersonSearch";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import MenuIcon from "@mui/icons-material/Menu";
 import sidebarBg from "../../../Assets/images/SidebarBG.svg";
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
+import HandshakeIcon from "@mui/icons-material/Handshake";
 import { useState } from "react";
 
 const SideBar = () => {
@@ -73,7 +73,7 @@ const SideBar = () => {
           <MenuItem className="menu-item" icon={<EmojiPeopleIcon />}>
             About Me
           </MenuItem>
-          <MenuItem className="menu-item" icon={<SponsorsIcon />}>
+          <MenuItem className="menu-item" icon={<HandshakeIcon />}>
             Sponsors
           </MenuItem>
         </Menu>
