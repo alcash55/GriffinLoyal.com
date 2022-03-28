@@ -9,7 +9,7 @@ import ReactPageScroller from "react-page-scroller";
 
 const AppContent = () => {
   return (
-    <ReactPageScroller>
+    <ReactPageScroller animationTimer={700}>
       <Merch />
       <Watch />
       <Schedule />
