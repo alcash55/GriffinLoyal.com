@@ -7,82 +7,30 @@ import {
   CardContent,
   Button,
   CardActions,
+  CardActionArea,
 } from "@mui/material";
-import Shirt from "../../../Assets/images/shirt.jpg";
+import Shirt from "../../../Assets/images/shirt.svg";
 import "./Merch.scss";
 
 const Merch = () => {
   return (
-    <Box sx={{ flexGrow: 1 }} className="merch">
-      <Grid
-        container
-        justifyContent="center"
-        rowSpacing={2}
-        columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-        sx={{ p: 10 }}
-      >
-        <Grid item xs={3} sx={{ mt: 10 }}>
-          <Card sx={{ maxWidth: 350 }}>
-            <CardMedia component="img" alt="shirt" height="350" image={Shirt} />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                T-Shirt Blue
-              </Typography>
-              <Typography variant="h5" color="text.secondary">
-                Comfy Unisex 100% cotton T-shirt
-              </Typography>
-            </CardContent>
+    <Box sx={{ flexGrow: 1, pt: 10, height: "100vh" }}>
+      <Typography variant="h5">Merch</Typography>
+      <Grid container spacing={2}>
+        <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
+          <Card>
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="140"
+                image={Shirt}
+                alt="Shirt SVG"
+              />
+            </CardActionArea>
+            <Typography variant="h6">T-Shirt</Typography>
             <CardActions>
-              <Button variant="outlined" size="small">
-                Buy Now
-              </Button>
-              <Button variant="outlined" size="small">
-                Learn More
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-
-        <Grid item xs={3} sx={{ mt: 10 }}>
-          <Card sx={{ maxWidth: 350 }}>
-            <CardMedia component="img" alt="shirt" height="350" image={Shirt} />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                T-Shirt RED
-              </Typography>
-              <Typography variant="h5" color="text.secondary">
-                Comfy Unisex 100% cotton T-shirt
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button variant="outlined" size="small">
-                Buy Now
-              </Button>
-              <Button variant="outlined" size="small">
-                Learn More
-              </Button>
-            </CardActions>
-          </Card>
-        </Grid>
-
-        <Grid item xs={6} sx={{ mt: 10 }}>
-          <Card sx={{ maxWidth: 350 }}>
-            <CardMedia component="img" alt="shirt" height="350" image={Shirt} />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                T-Shirt RED
-              </Typography>
-              <Typography variant="h5" color="text.secondary">
-                Comfy Unisex 100% cotton T-shirt
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button variant="outlined" size="small">
-                Buy Now
-              </Button>
-              <Button variant="outlined" size="small">
-                Learn More
-              </Button>
+              <Button variant="outlined">Buy Now</Button>
+              <Button variant="outlined">More Information</Button>
             </CardActions>
           </Card>
         </Grid>
