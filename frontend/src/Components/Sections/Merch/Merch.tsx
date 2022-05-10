@@ -14,8 +14,8 @@ import "./Merch.scss";
 const Merch = () => {
   return (
     <Box sx={{ flexGrow: 1, pt: 10, height: "100vh" }}>
-      <Typography variant="h5">Merch</Typography>
-      <Grid container spacing={2}>
+      <Typography variant="h4">Merch</Typography>
+      <Grid container spacing={3} sx={{ p: 5 }}>
         <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
           <Card>
             <CardActionArea>

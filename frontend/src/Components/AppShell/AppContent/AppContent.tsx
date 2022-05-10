@@ -5,7 +5,6 @@ import Schedule from "../../Sections/Schedule/Schedule";
 import Sponsors from "../../Sections/Sponsors/Sponsors";
 import AboutMe from "../../Sections/AboutMe/AboutMe";
 import ReactPageScroller from "react-page-scroller";
-// import { Pagination } from "react-bootstrap";
 
 const AppContent = () => {
   return (
