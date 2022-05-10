@@ -1,9 +1,6 @@
-import { lazy } from 'react';
-
-export const Sections = {
-    AboutMe: lazy(() => import('./AboutMe')),
-    Merch: lazy(() => import('./Merch')),
-    Schedule: lazy(() => import('./Schedule')),
-    Sponsors: lazy(() => import('./Sponsors')),
-    Watch: lazy(() => import('./Watch')),
-}
+export {default as AboutMe} from './AboutMe';
+export {default as Merch} from './Merch';
+export {default as Music} from './Music';
+export {default as Schedule} from './Schedule';
+export {default as Sponsors} from './Sponsors';
+export {default as Watch} from './Watch';

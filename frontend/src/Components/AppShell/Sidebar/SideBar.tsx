@@ -18,6 +18,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import MenuIcon from "@mui/icons-material/Menu";
 import sidebarBg from "../../../Assets/images/SidebarBG.svg";
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
+import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import HandshakeIcon from "@mui/icons-material/Handshake";
 import { useState } from "react";
 import { BrowserRouter as Router, Link } from "react-router-dom";
@@ -68,7 +69,7 @@ const SideBar = () => {
         <SidebarContent>
           <Menu iconShape="circle">
             <MenuItem className="menu-item" icon={<MerchIcon />}>
-              <Link to="/">Merch</Link>
+              <Link to="/Merch">Merch</Link>
             </MenuItem>
             <MenuItem className="menu-item" icon={<WatchIcon />}>
               <Link to="/Watch">Watch</Link>
@@ -82,6 +83,9 @@ const SideBar = () => {
             <MenuItem className="menu-item" icon={<HandshakeIcon />}>
               <Link to="/Sponsors">Sponsors</Link>
             </MenuItem>
+            <MenuItem className="menu-item" icon={<MusicNoteIcon />}>
+              <Link to="/Music">Music</Link>
+            </MenuItem>
           </Menu>
         </SidebarContent>
         <SidebarFooter style={{ textAlign: "center" }}>
@@ -92,7 +96,7 @@ const SideBar = () => {
               alignItems: "center",
             }}
           >
-            <div
+            <Box
               className="sidebar-btn-wrapper"
               style={{
                 padding: "20px 24px",
@@ -144,7 +148,7 @@ const SideBar = () => {
                   </SvgIcon>
                 </IconButton>
               </Box>
-            </div>
+            </Box>
           </Box>
         </SidebarFooter>
       </ProSidebar>
