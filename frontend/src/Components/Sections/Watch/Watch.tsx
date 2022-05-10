@@ -4,6 +4,7 @@ import "./Watch.scss";
 const Watch = () => {
   return (
     <Box sx={{ flexGrow: 1 }} className="watch">
+      <Typography variant="h4">Watch</Typography>
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Typography>This is where content goes</Typography>

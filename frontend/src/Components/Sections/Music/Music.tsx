@@ -1,10 +1,10 @@
 import { Grid, Box, Typography } from "@mui/material";
-import "./AboutMe.scss";
+import "./Music.scss";
 
-const AboutMe = () => {
+const Music = () => {
   return (
-    <Box sx={{ flexGrow: 1 }} className="aboutme">
-      <Typography variant="h4">About Me</Typography>
+    <Box sx={{ flexGrow: 1 }} className="schedule">
+      <Typography variant="h4">Music</Typography>
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Typography>This is where content goes</Typography>
@@ -23,4 +23,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default Music;

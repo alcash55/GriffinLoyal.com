@@ -1,17 +1,20 @@
 import "./AppContent.scss";
-import Merch from "../../Sections/Merch/Merch";
-import Watch from "../../Sections/Watch/Watch";
-import Schedule from "../../Sections/Schedule/Schedule";
-import Sponsors from "../../Sections/Sponsors/Sponsors";
-import AboutMe from "../../Sections/AboutMe/AboutMe";
+import {
+  Merch,
+  Watch,
+  Music,
+  Schedule,
+  Sponsors,
+  AboutMe,
+} from "../../Sections";
 import ReactPageScroller from "react-page-scroller";
-// import { Pagination } from "react-bootstrap";
 
 const AppContent = () => {
   return (
     <ReactPageScroller animationTimer={700}>
       <Merch />
       <Watch />
+      <Music />
       <Schedule />
       <Sponsors />
       <AboutMe />
