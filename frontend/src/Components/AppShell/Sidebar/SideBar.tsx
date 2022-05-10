@@ -74,6 +74,9 @@ const SideBar = () => {
             <MenuItem className="menu-item" icon={<WatchIcon />}>
               <Link to="/Watch">Watch</Link>
             </MenuItem>
+            <MenuItem className="menu-item" icon={<MusicNoteIcon />}>
+              <Link to="/Music">Music</Link>
+            </MenuItem>
             <MenuItem className="menu-item" icon={<ScheduleIcon />}>
               <Link to="/Schedule">Schedule</Link>
             </MenuItem>
@@ -82,9 +85,6 @@ const SideBar = () => {
             </MenuItem>
             <MenuItem className="menu-item" icon={<HandshakeIcon />}>
               <Link to="/Sponsors">Sponsors</Link>
-            </MenuItem>
-            <MenuItem className="menu-item" icon={<MusicNoteIcon />}>
-              <Link to="/Music">Music</Link>
             </MenuItem>
           </Menu>
         </SidebarContent>
