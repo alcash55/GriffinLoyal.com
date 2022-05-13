@@ -10,7 +10,7 @@ export const App = () => {
         <SideBar />
         <div className="appContent">
           <Routes>
-            <Route path="/Merch" element={<Merch />} />
+            <Route path="/" element={<Merch />} />
             <Route path="/Watch" element={<Watch />} />
             <Route path="/Music" element={<Music />} />
             <Route path="Schedule" element={<Schedule />} />

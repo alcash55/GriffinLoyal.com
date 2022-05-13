@@ -10,18 +10,6 @@ import { Box, IconButton, SvgIcon } from "@mui/material";
 import "./SideBar.scss";
 import loyal from "../../../Assets/images/Loyal.svg";
 import sidebarBg from "../../../Assets/images/SidebarBG.svg";
-// import {
-//   HandshakeIcon,
-//   MusicNoteIcon,
-//   EmojiPeopleIcon,
-//   MenuIcon,
-//   YouTubeIcon,
-//   InstagramIcon,
-//   TwitterIcon,
-//   ScheduleIcon,
-//   WatchIcon,
-//   MerchIcon,
-// } from "@mui/icons-material";
 import MerchIcon from "@mui/icons-material/Checkroom";
 import WatchIcon from "@mui/icons-material/LiveTv";
 import ScheduleIcon from "@mui/icons-material/CalendarMonth";
@@ -78,7 +66,7 @@ const SideBar = () => {
       <SidebarContent>
         <Menu iconShape="circle">
           <MenuItem className="menu-item" icon={<MerchIcon />}>
-            <Link to="/Merch">Merch</Link>
+            <Link to="/">Merch</Link>
           </MenuItem>
           <MenuItem className="menu-item" icon={<WatchIcon />}>
             <Link to="/Watch">Watch</Link>
