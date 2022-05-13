@@ -13,7 +13,7 @@ const Watch = () => {
         <iframe
           className="embedStream"
           title="Griffin Loyal's Twitch"
-          src="https://player.twitch.tv/?channel=GriffinLoyal&parent=localhost:3000&autoplay=true&muted=true"
+          src="https://player.twitch.tv/?channel=GriffinLoyal&parent=localhost&autoplay=true&muted=true"
           frameBorder="0"
           allowFullScreen={true}
           scrolling="no"
