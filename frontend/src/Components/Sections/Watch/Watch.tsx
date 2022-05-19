@@ -9,7 +9,6 @@ const Watch = () => {
         sx={{ display: "flex", justifyContent: "space-around", mr: 35, pt: 15 }}
       >
         {/* https://dev.twitch.tv/docs/embed/video-and-clips/ */}
-        {/* Possibly doesnt work with local host */}
         <iframe
           className="embedStream"
           title="Griffin Loyal's Twitch"
