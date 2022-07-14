@@ -26,6 +26,7 @@ jobs:
         with:
           lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
           minAccessibilityScore: "90"
+          commentUrl: "true"
       - name: Upload artifacts
         uses: actions/upload-artifact@master
         with:
