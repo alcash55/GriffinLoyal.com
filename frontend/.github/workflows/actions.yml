@@ -1,9 +1,11 @@
-name: actions
+name: Lighthouse Test
+
 on: [pull_request, workflow_dispatch]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@master
       - run: mkdir ${{ github.workspace }}/tmp/artifacts
@@ -11,11 +13,11 @@ jobs:
         uses: foo-software/lighthouse-check-action@master
         id: lighthouseCheck
         with:
+          urls: "https://www.foo.software,https://www.foo.software/contact"
           gitAuthor: ${{ github.actor }}
           gitBranch: ${{ github.ref }}
           gitHubAccessToken: ${{ secrets.LIGHTHOUSE_CHECK_GITHUB_ACCESS_TOKEN }}
           outputDirectory: ${{ github.workspace }}/tmp/artifacts
-          urls: "https://www.foo.software,https://www.foo.software/contact"
           sha: ${{ github.sha }}
           slackWebhookUrl: ${{ secrets.LIGHTHOUSE_CHECK_WEBHOOK_URL }}
       - name: Verify Lighthouse Check results
