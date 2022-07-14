@@ -1,4 +1,4 @@
-name: Lighthouse
+name: actions
 on: [pull_request, workflow_dispatch]
 
 jobs:
