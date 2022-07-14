@@ -6,17 +6,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Lighthouse
+      - run: mkdir ${{ github.workspace }}/tmp/artifacts
+      - name: Run Lighthouse
         uses: foo-software/lighthouse-check-action@master
         id: lighthouseCheck
         with:
-          urls: 'https://www.foo.software,https://www.foo.software/contact'
+          urls: "https://www.foo.software,https://www.foo.software/contact"
           gitAuthor: ${{ github.actor }}
           gitBranch: ${{ github.ref }}
           gitHubAccessToken: ${{ secrets.LIGHTHOUSE_CHECK_GITHUB_ACCESS_TOKEN }}
           outputDirectory: ${{ github.workspace }}/tmp/artifacts
           sha: ${{ github.sha }}
           slackWebhookUrl: ${{ secrets.LIGHTHOUSE_CHECK_WEBHOOK_URL }}
+      - name: Verify Lighthouse Check results
         uses: foo-software/lighthouse-check-status-action@master
         with:
           lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
