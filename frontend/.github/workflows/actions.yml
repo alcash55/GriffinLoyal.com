@@ -2,7 +2,7 @@ name: actions
 on: [pull_request, workflow_dispatch]
 
 jobs:
-  lighthouse:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
