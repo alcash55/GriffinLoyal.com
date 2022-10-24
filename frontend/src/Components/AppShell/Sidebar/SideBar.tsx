@@ -10,9 +10,8 @@ import { Box, IconButton, SvgIcon } from "@mui/material";
 import "./SideBar.scss";
 import loyal from "../../../Assets/images/Loyal.svg";
 import sidebarBg from "../../../Assets/images/SidebarBG.svg";
+import { Watch, Schedule} from "@mui/icons-material";
 import MerchIcon from "@mui/icons-material/Checkroom";
-import WatchIcon from "@mui/icons-material/LiveTv";
-import ScheduleIcon from "@mui/icons-material/CalendarMonth";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
@@ -68,13 +67,13 @@ const SideBar = () => {
           <MenuItem className="menu-item" icon={<MerchIcon />}>
             <Link to="/">Merch</Link>
           </MenuItem>
-          <MenuItem className="menu-item" icon={<WatchIcon />}>
+          <MenuItem className="menu-item" icon={<Watch />}>
             <Link to="/Watch">Watch</Link>
           </MenuItem>
           <MenuItem className="menu-item" icon={<MusicNoteIcon />}>
             <Link to="/Music">Music</Link>
           </MenuItem>
-          <MenuItem className="menu-item" icon={<ScheduleIcon />}>
+          <MenuItem className="menu-item" icon={<Schedule />}>
             <Link to="/Schedule">Schedule</Link>
           </MenuItem>
           <MenuItem className="menu-item" icon={<EmojiPeopleIcon />}>
