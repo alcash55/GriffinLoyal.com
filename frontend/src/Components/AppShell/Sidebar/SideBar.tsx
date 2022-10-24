@@ -10,16 +10,7 @@ import { Box, IconButton, SvgIcon } from "@mui/material";
 import "./SideBar.scss";
 import loyal from "../../../Assets/images/Loyal.svg";
 import sidebarBg from "../../../Assets/images/SidebarBG.svg";
-import MerchIcon from "@mui/icons-material/Checkroom";
-import WatchIcon from "@mui/icons-material/LiveTv";
-import ScheduleIcon from "@mui/icons-material/CalendarMonth";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import MenuIcon from "@mui/icons-material/Menu";
-import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
-import MusicNoteIcon from "@mui/icons-material/MusicNote";
-import HandshakeIcon from "@mui/icons-material/Handshake";
+import { Watch, Schedule, MusicNote, Handshake, Twitter, Instagram, YouTube, Menu as MenuIcon, EmojiPeople, Checkroom as MerchIcon } from "@mui/icons-material";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -68,19 +59,19 @@ const SideBar = () => {
           <MenuItem className="menu-item" icon={<MerchIcon />}>
             <Link to="/">Merch</Link>
           </MenuItem>
-          <MenuItem className="menu-item" icon={<WatchIcon />}>
+          <MenuItem className="menu-item" icon={<Watch />}>
             <Link to="/Watch">Watch</Link>
           </MenuItem>
-          <MenuItem className="menu-item" icon={<MusicNoteIcon />}>
+          <MenuItem className="menu-item" icon={<MusicNote />}>
             <Link to="/Music">Music</Link>
           </MenuItem>
-          <MenuItem className="menu-item" icon={<ScheduleIcon />}>
+          <MenuItem className="menu-item" icon={<Schedule />}>
             <Link to="/Schedule">Schedule</Link>
           </MenuItem>
-          <MenuItem className="menu-item" icon={<EmojiPeopleIcon />}>
+          <MenuItem className="menu-item" icon={<EmojiPeople />}>
             <Link to="/AboutMe">About Me</Link>
           </MenuItem>
-          <MenuItem className="menu-item" icon={<HandshakeIcon />}>
+          <MenuItem className="menu-item" icon={<Handshake />}>
             <Link to="/Sponsors">Sponsors</Link>
           </MenuItem>
         </Menu>
@@ -111,7 +102,7 @@ const SideBar = () => {
                 }}
               >
                 <SvgIcon>
-                  <TwitterIcon />
+                  <Twitter />
                 </SvgIcon>
               </IconButton>
 
@@ -126,7 +117,7 @@ const SideBar = () => {
                 }}
               >
                 <SvgIcon>
-                  <InstagramIcon sx={{ color: "white" }} />
+                  <Instagram sx={{ color: "white" }} />
                 </SvgIcon>
               </IconButton>
 
@@ -141,7 +132,7 @@ const SideBar = () => {
                 }}
               >
                 <SvgIcon>
-                  <YouTubeIcon sx={{ color: "white" }} />
+                  <YouTube sx={{ color: "white" }} />
                 </SvgIcon>
               </IconButton>
             </Box>

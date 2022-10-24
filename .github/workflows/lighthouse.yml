@@ -1,0 +1,48 @@
+name: Lighthouse Test
+
+on: [pull_request, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - run: mkdir -p ${{ github.workspace }}/tmp/artifacts
+      - name: Run Lighthouse Desktop
+        uses: foo-software/lighthouse-check-action@master
+        id: lighthouseDesktopCheck
+        with:
+          urls: 'https://www.foo.software,https://www.foo.software/contact'
+          gitAuthor: ${{ github.actor }}
+          gitBranch: ${{ github.ref }}
+          gitHubAccessToken: ${{ secrets.LIGHTHOUSE_CHECK_GITHUB_ACCESS_TOKEN }}
+          outputDirectory: ${{ github.workspace }}/tmp/artifacts
+          sha: ${{ github.sha }}
+          slackWebhookUrl: ${{ secrets.LIGHTHOUSE_CHECK_WEBHOOK_URL }}
+          device: desktop
+          
+      - name: Run Lighthouse Mobile
+        uses: foo-software/lighthouse-check-action@master
+        id: lighthouseMobileCheck
+        with:
+          urls: 'https://www.foo.software,https://www.foo.software/contact'
+          gitAuthor: ${{ github.actor }}
+          gitBranch: ${{ github.ref }}
+          gitHubAccessToken: ${{ secrets.LIGHTHOUSE_CHECK_GITHUB_ACCESS_TOKEN }}
+          outputDirectory: ${{ github.workspace }}/tmp/artifacts
+          sha: ${{ github.sha }}
+          slackWebhookUrl: ${{ secrets.LIGHTHOUSE_CHECK_WEBHOOK_URL }}
+          device: mobile
+          
+      - name: Verify Lighthouse Check results
+        uses: foo-software/lighthouse-check-status-action@master
+        with:
+          lighthouseCheckResults: ${{ steps.lighthouseCheck.outputs.lighthouseCheckResults }}
+          minAccessibilityScore: "88"
+          
+      - name: Upload artifacts
+        uses: actions/upload-artifact@master
+        with:
+          name: Lighthouse reports
+          path: ${{ github.workspace }}/tmp/artifacts
